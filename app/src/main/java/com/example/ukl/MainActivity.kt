@@ -8,6 +8,8 @@ import android.widget.EditText
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+    private var title: String = "Lightstick Area"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,7 +23,5 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("email", strEmail)
             startActivity(intent)
         }
-
-
         }
     }
