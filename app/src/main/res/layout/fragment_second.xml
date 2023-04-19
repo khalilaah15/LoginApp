@@ -1,71 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment_second">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
 
-    <ImageView
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:id="@+id/imageView2"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:src="@drawable/user_avatar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
 
-    <TextView
-        android:layout_width="0dp"
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView2"-->
+<!--        android:layout_width="72dp"-->
+<!--        android:layout_height="72dp"-->
+<!--        android:layout_marginStart="160dp"-->
+<!--        android:layout_marginLeft="80dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginRight="80dp"-->
+<!--        android:src="@drawable/user_avatar" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewName"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:gravity="center"
-        android:hint="User Display Name"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:text="Haloo Dunia!"/>
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_marginTop="24dp"
-        android:text="Selamat Datang"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"/>
+        <TextView
+            android:id="@+id/txtFriendName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtFriendEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:id="@+id/txtFriendTTL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:textSize="16sp"/>
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewEmail"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:gravity="center"
-        android:hint="User Display Email"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintTop_toBottomOf="@+id/textViewName"
-        tools:text="Haloo Dunia!"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000000"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+
