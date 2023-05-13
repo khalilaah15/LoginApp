@@ -37,7 +37,7 @@ class MyFriendAdapter(private val context: Context, private val items: ArrayList
     RecyclerView.Adapter<MyFriendAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        ViewHolder(LayoutInflater.from(context).inflate(R.layout.fragment_item, parent, false))
+        ViewHolder(LayoutInflater.from(context).inflate(R.layout.item_registrasi, parent, false))
 
     override fun getItemCount(): Int {
         return items.size

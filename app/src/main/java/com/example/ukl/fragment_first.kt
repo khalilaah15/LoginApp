@@ -114,7 +114,7 @@ class fragment_first : Fragment() {
 
     private var edtName : EditText? = null
     private var edtEmail : EditText? = null
-    private var edtTTL : EditText? = null
+    private var edtTTL : Button? = null
     private var btnSave: Button? = null
 
 

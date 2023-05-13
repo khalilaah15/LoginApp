@@ -5,13 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class fragment_second : Fragment() {
 //    private var communicationViewModel: CommunicationViewModel? = null
@@ -57,7 +54,7 @@ class fragment_second : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        communicationViewModel = ViewModelProviders.of(requireActivity()).get(CommunicationViewModel::class.java)
+//        communicationViewModel = ViewModelProviders.of(requireActivity()).get(CommunicationViewModel::class.java)
     }
 
     override fun onCreateView(
@@ -80,7 +77,7 @@ class fragment_second : Fragment() {
     }
 
     private fun initView() {
-        listMyFriend = activity?.findViewById(R.id.listMyFriends)
+        listMyFriend = activity?.findViewById(R.id.listMyFriend)
         ambilData()
     }
 

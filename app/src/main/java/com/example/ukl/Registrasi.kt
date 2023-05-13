@@ -19,21 +19,21 @@ class Registrasi : AppCompatActivity() {
         view_pager.adapter = ViewPagerAdapter(this, supportFragmentManager)
         tabs.setupWithViewPager(view_pager)
     }
-
-    private fun gantiFragment (
-        fragmentManager: FragmentManager, fragment: Fragment, frameId: Int
-    ) {
-        val transaction = fragmentManager.beginTransaction()
-        transaction.replace(frameId, fragment)
-
-        transaction.commit()
-    }
-
-    fun tampilMyFriendsFragment() {
-        gantiFragment(supportFragmentManager, fragment_second.newInstance(), R.id.contentFrame)
-    }
-
-    fun tampilMyFriendsAddFragment() {
-        gantiFragment(supportFragmentManager, fragment_first.newInstance(), R.id.contentFrame)
-    }
+//
+//    private fun gantiFragment (
+//        fragmentManager: FragmentManager, fragment: Fragment, frameId: Int
+//    ) {
+//        val transaction = fragmentManager.beginTransaction()
+//        transaction.replace(frameId, fragment)
+//
+//        transaction.commit()
+//    }
+//
+//    fun tampilMyFriendsFragment() {
+//        gantiFragment(supportFragmentManager, fragment_second.newInstance(), R.id.contentFrame)
+//    }
+//
+//    fun tampilMyFriendsAddFragment() {
+//        gantiFragment(supportFragmentManager, fragment_first.newInstance(), R.id.contentFrame)
+//    }
 }
